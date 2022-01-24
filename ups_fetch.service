@@ -1,0 +1,9 @@
+[Unit]
+Description=Get UPS FTP Invoices Weekly
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/c9/ups/
+ExecStart=/usr/local/bin/pipenv run python /home/ubuntu/c9/ups/get_ups_files.py

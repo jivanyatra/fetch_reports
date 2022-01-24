@@ -1,0 +1,10 @@
+[Unit]
+Description=Get UPS FTP Invoices Weekly on Tuesday nights
+
+[Timer]
+OnCalendar=Tue *-*-* 22:00:00
+AccuracySec=6h
+Persistent=true
+
+[Install]
+WantedBy=multi-user.target
