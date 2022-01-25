@@ -6,4 +6,4 @@ After=network-online.target
 [Service]
 User=ubuntu
 WorkingDirectory=/home/ubuntu/c9/ups/
-ExecStart=/usr/local/bin/pipenv run python /home/ubuntu/c9/ups/get_ups_files.py
+ExecStart=/usr/local/bin/pipenv run python /home/ubuntu/c9/fetch_reports/get_ups_files.py
